@@ -58,7 +58,7 @@ fetch("./profiles.csv")
             placeholder: "No profiles available",
             movableColumns: supportsColumnRearrangement,
             resizableColumns: supportsColumnRearrangement,
-            selectableRows: false,
+            selectableRows: 1,
             headerSort: true,
             headerWordWrap: true,
             columns,

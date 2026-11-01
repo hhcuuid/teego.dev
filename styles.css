@@ -11,14 +11,6 @@
     font-family: "IBM Plex Mono";
     font-style: normal;
     font-weight: 400;
-    src: url('fonts/Go-Mono.ttf') format('truetype');
-}
-
-@font-face {
-    font-display: swap;
-    font-family: "IBM Plex Mono";
-    font-style: normal;
-    font-weight: 400;
     src: url('fonts/IBMPlexMono-Regular.ttf') format('truetype');
 }
 
@@ -50,12 +42,12 @@ h1 {
     border-radius: 0.5rem;
     border: 1px solid #8d8d8d;
     background: #262626;
-    color: #e5e5e5;
+    color: #f4f4f4;
     font: inherit;
 }
 
 .search-container input::placeholder {
-    color: #b7b7b7;
+    color: rgba(244, 244, 244, 0.4);
 }
 
 .tabulator {
@@ -68,7 +60,7 @@ h1 {
 /* Header */
 .tabulator .tabulator-header {
     color: #6fdc8c;
-    border-bottom: 2px solid #defbe6;
+    border-bottom: 2px solid #8d8d8d;
 }
 
 .tabulator .tabulator-header .tabulator-col {
@@ -78,8 +70,8 @@ h1 {
 /* Rows (base and alternating/zebra striping) */
 .tabulator .tabulator-row {
     background-color: #262626;
-    font-size: 0.75rem;
-    color: #e5e5e5;
+    font-size: 0.85rem;
+    color: #c6c6c6;
 }
 
 .tabulator .tabulator-row.tabulator-row-even {
@@ -92,7 +84,12 @@ h1 {
 
 /* Row Hover */
 .tabulator .tabulator-row:hover {
-    background-color: #333333 !important;
+    background-color: #393939 !important;
+}
+
+.tabulator .tabulator-row.tabulator-selected {
+    background-color: #0e6027 !important;
+
 }
 
 .tabulator .tabulator-header .tabulator-col-title {
